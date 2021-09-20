@@ -1,0 +1,5 @@
+Filename,Warning Count,Error Count
+lifecycle-server.log,8,198
+docker1.log,8,198
+testfile.log,3,3
+trim-after-delete.log,0,0

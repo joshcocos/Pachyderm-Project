@@ -1,0 +1,16 @@
+{
+  "pipeline": {
+    "name": "log_parser"
+  },
+  "description": "A pipeline that counts lines with warning or error in log files.",
+  "input": {
+    "pfs": {
+      "glob": "/",
+      "repo": "log_files"
+    }
+  },
+  "transform": {
+    "cmd": [ "python3", "/log_parser.py" ],
+    "image": "josh/pachyderm:latest"
+  }
+}
